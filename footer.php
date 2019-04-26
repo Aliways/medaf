@@ -1,4 +1,4 @@
-<footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(images/bg_2.jpg); background-attachment:fixed;">
+<footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(images/exe.png); background-attachment:fixed;">
       <div class="overlay"></div>
       <div class="container">
         <div class="row mb-5">
@@ -30,7 +30,7 @@
                 </div>
               </div>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <a class="blog-img mr-4" style="background-image: url(images/unilag.png);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="#">The Importance of Education</a></h3>
                   <div class="meta">
@@ -47,7 +47,7 @@
               <h2 class="ftco-heading-2">Site Links</h2>
               <ul class="list-unstyled">
                 <li><a href="index.php" class="py-2 d-block">Home</a></li>
-                <li><a href="article.php" class="py-2 d-block">Article</a></li>
+                <li><a href="blog.php" class="py-2 d-block">Blog</a></li>
                 <li><a href="donate.php" class="py-2 d-block">Donate</a></li>
                 <li><a href="contact.php" class="py-2 d-block">Contact</a></li>
                 <li><a href="https://vimeo.com/45830194" class="py-2 d-block">Video</a></li>
@@ -60,9 +60,9 @@
               <div class="block-23 mb-3">
                 <ul>
                   <li><span class="icon icon-map-marker"></span><span class="text">13 & 15, Mafoluku Road, Muri aka Lagos.</span></li>
-                  <li><a href="#"><span class="icon icon-phone"></span><span class="text"> +2347011957223, </span></a></li>
-                   <li><a href="#"><span class="icon icon-phone"></span><span class="text"> +2348172445162 </span></a></li>
-                  <li><a href="https://www.medaf.org"><span class="icon icon-envelope"></span><span class="text">info@medaf.org</span></a></li>
+                  <li>><span class="icon icon-phone"></span><span class="text"> +2347011957223, </span></li>
+                   <li><span class="icon icon-phone"></span><span class="text"> +2348172445162 </span></li>
+                  <li><span class="icon icon-envelope"></span><span class="text">info@medaf.org</span></li>
                 </ul>
               </div>
             </div>
@@ -97,11 +97,19 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script> 
   <script src="js/scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
-  </body>
+  <script src="js/app.js"></script>
+
+
+  <script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+  </script>
+ </body>
 </html>
+<?php unset($_SESSION['flag']);
+unset($_SESSION['msg']) ?>
