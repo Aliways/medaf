@@ -2,16 +2,15 @@
  // include'auth.php';
   include 'header.php';
   include 'nav.php';
+  include 'login.php';
   include 'db/functions.php';
+
 ?>
   <body>
     
     <div class="hero-wrap" style="background-image: url('images/african_graduate.png'); background-attachment:fixed;">
        <div class="overlay"></div>
-      <div class="container">
-        <?php if (isset($_SESSION['flag'])): ?>
-          <div class="col-md-2 justify-content-md-center alert alert-<?php echo $_SESSION['flag']; ?>"><?php echo $_SESSION['msg']; ?></div>
-        <?php endif; ?>
+       <div class="container"></div>
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-8 ftco-animate text-center">
             <h1 class="mb-4">Welcome to the Muslim Educational Aid Foundation (MEDAF)</h1>
@@ -23,7 +22,7 @@
 
    <!-- Modal -->  <!-- Button trigger modal -->  <!-- I used modal bootstrap here -->
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <!--  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -38,12 +37,12 @@
         <div class="form-group">
           
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" name="email"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input type="email" name="email"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
         </div>
 
         <div class="tab">Scholarship Type:
@@ -53,14 +52,14 @@
               <option value="career_advancement_professional_certification">Career Advancement/Professional Certification</option>
                <option value="orphanage_assistanship">Orphanage Assistanship</option>
             </select>
-          </div>
+          </div><br>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
       </div>
     </div>
   </div>
 </div>
-
+ -->
 
    
     <section class="ftco-section">
@@ -304,9 +303,6 @@
 			    			<h3>MEDAF MENTORSHIP</h3>
                 <p>The selection of a MEDAF Scholar is unique in its attention to a young person’s character. We believe that integrity, courage, grit and personal autonomy are better indicators of overall potential than standard academic measures. To discover these traits, we administer the most comprehensive and thorough scholarship selection process in Nigeria.</p>
 			    		</div>
-			    		<div class="btn-join ftco-animate">
-			    			<p><a href="login.php" class="btn btn-primary py-1 px-2">Login</a></p>
-			    		</div>
 			    	</div>
     			</div>
     		</div>
@@ -332,7 +328,7 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <h3 class="heading mt-3"><a href="blog.php">The Global Village</a></h3>
+                <h3 class="heading mt-3"><a href="global_village.php">The Global Village</a></h3>
                 <p>No one can escape from the absolute need of technology in our daily life.</p>
               </div>
             </div>
@@ -347,7 +343,7 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <h3 class="heading mt-3"><a href="blog.php">The Importance of Education</a></h3>
+                <h3 class="heading mt-3"><a href="importance_of_education.php">The Importance of Education</a></h3>
                 <p>It is no secret that a good education has the power to change a life.</p>
               </div>
             </div>
@@ -362,7 +358,7 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <h3 class="heading mt-3"><a href="blog.php">How to standout at start of your UX Career</a></h3>
+                <h3 class="heading mt-3"><a href="ux_career.php">How to standout at start of your UX Career</a></h3>
                 <p>UX Design is a career for you if you have relevant education, you are interested in design thinking, you want to study human’s behaviors, or you love innovation and creativity.</p>
               </div>
             </div>
@@ -490,10 +486,10 @@
               <p>By subscribing to this mailing list, you will be receiving newsletters  providing you with information relevant to applying for a MEDAF Scholarship.</p>
               <div class="row d-flex justify-content-center mt-5">
                 <div class="col-md-8">
-                  <form id="newsletter" method='POST' action="db/newsletter.php" class="subscribe-form">
+                  <form id="newsletter" method='POST' action="db/index.php" class="subscribe-form">
                     <div class="form-group d-flex">
-                      <input name="email_address" type="text" class="form-control" placeholder="Enter email address">
-                      <input type="submit" value="Subscribe" class="submit px-3">
+                      <input name="email_address" type="text" class="form-control" placeholder="Enter email address" required>
+                      <input type="submit" value="Subscribe" class="submit px-3" required>
                     </div>
                   </form>
                 </div>

@@ -1,6 +1,7 @@
 <?php
-include 'header.php';
-include 'nav.php';
+  include 'header.php';
+  include 'nav.php';
+  include 'login.php';
 ?>
  <div class="pagebanner" style="background: /*#00004d*/ #9999ff  !important">  
       <div class="region region-page-banner-text">

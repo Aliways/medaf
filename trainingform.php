@@ -1,7 +1,13 @@
 <?php
 include 'header.php';
 include 'nav.php';
+include 'login.php';
 ?>
+  <div class="container">
+        <?php if (isset($_SESSION['flag'])): ?>
+          <div class="col-md-2 justify-content-md-center alert alert-<?php echo $_SESSION['flag']; ?>"><?php echo $_SESSION['msg']; ?></div>
+        <?php endif; ?>
+  </div>
 <ul class="breadcrumb">
       <li><a href="#"><img src="images/phone-book.png"></a></li>
      <li><a href="#">Training Form</a></li>

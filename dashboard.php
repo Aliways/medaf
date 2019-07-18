@@ -3,6 +3,7 @@
   include 'auth.php';
   include 'header.php';
   include 'nav.php';
+  include 'login.php';
 ?>
   <body>
     <div class="hero-wrap" style="background-image: url('images/african_graduate.png'); background-attachment:fixed;">

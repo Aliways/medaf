@@ -2,8 +2,16 @@
 include 'header.php';
 include 'nav.php';
 
+
 ?>
 <body>
+  <div class="container">
+     <?php if (isset($_SESSION['flag'])): ?>
+        <div class="col-md-2 justify-content-md-center alert alert-<?php echo $_SESSION['flag']; ?>"><?php echo $_SESSION['msg']; ?></div>
+        <?php endif; ?>
+  </div>
+    
+  </div>
 
   <ul class="breadcrumb">
     <li><a href="#"><img src="images/phone-book.png"></a></li>
@@ -22,17 +30,21 @@ include 'nav.php';
 </div></div></div><br>
       <div class="content">
         <div style="padding: 20px 10px;">
-          <div style="border:1px solid gold;/*font-size: 18px; font-family:'lucida calligraphy*/';padding: 20px;">
+          <!-- <div style="border:1px solid gold; padding: 20px;"> -->
             <h3 style="text-decoration: underline;">Personal Information</h3><br>
-            <form method="post" action="db/volunteer.php">
+            
+            <!-- <form method="post" action="db/volunteer.php"> -->
+              <form id="volunteer" method='POST' action="db/volunteer.php" class="volunteer">
               <div class="row ">
-                <div class="col-md-4 form-group box">
+                <div class="col-md-4 form-group box" style="font-size: 12px;">
                       <label for="name">Fullname</label>
-                      <input type="text" id="name" name="fullname"class="form-control" placeholder="Fullname">
+                      <input name="fullmame" type="text" class="form-control" placeholder="Fullname" style="font-size: 12px;">
+                     <!--  <input type="text" id="name" name="fullname"class="form-control" placeholder="Fullname"> -->
                     </div>
-                    <div class="col-md-4 form-group box">
+                    <div class="col-md-4 form-group box" style="font-size: 12px;">
                       <label for="name">Gender</label>
-                      <select id="form_need" name="gender" class="form-control" required="required"  data-error="      Please specify your need.">
+                    <!--   <select id="form_need" name="gender" class="form-control" required="required"  data-error="Please specify your need."> -->
+                      <select id="form_need" name="gender" class="form-control">
                       <option value="" selected="selected">- Select -</option>
                       <option value="male">Male</option>
                       <option value="female">Female</option>
@@ -40,7 +52,7 @@ include 'nav.php';
                     </div>
                    
                      <div class="col-md-4 form-group box">
-                      <label for="email">Email</label>
+                      <label for="email" style="font-size: 12px;">Email</label>
                       <input type="email" id="email" name="email" class="form-control" placeholder="Email">
                     </div>
                      <div class="col-md-4 form-group box">
@@ -66,7 +78,8 @@ include 'nav.php';
                     
                      <div class="col-md-4 form-group box">
                       <label for="name">Level of Competence</label>
-                      <select id="form_need" name="level_of_competence" class="form-control" required="required"  data-error="      Please specify your need.">
+                     <!--  <select id="form_need" name="level_of_competence" class="form-control" required="required"  data-error="      Please specify your need."> -->
+                      <select id="form_need" name="level_of_competence" class="form-control">
                      <option value="" selected="selected">- Select -</option><option value="expert">Expert</option><option value="intermediate">Intermediate</option><option value="beginner">Beginner</option>
                      </select>
                     </div>
@@ -83,12 +96,11 @@ include 'nav.php';
                   
             </div>
               <div class="col-md-6 form-group mt-4">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" value= "volunteer" class="btn btn-primary submit px-3">Submit</button> 
               </div>
           </form> 
 
           </div>
-        </div>
       </div>
     </div>
            

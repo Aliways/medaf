@@ -1,10 +1,15 @@
 <?php
 include 'header.php';
 include 'nav.php';
-
 ?>
 
 <body>
+
+  <div class="container">
+        <?php if (isset($_SESSION['flag'])): ?>
+          <div class="col-md-2 justify-content-md-center alert alert-<?php echo $_SESSION['flag']; ?>" id="msf"><?php echo $_SESSION['msg']; ?></div>
+        <?php endif; ?>
+  </div>
 
    <ul class="breadcrumb">
       <li><a href="#"><img src="images/phone-book.png"></a></li>
@@ -13,7 +18,6 @@ include 'nav.php';
  
   <div class="content mt-4">
     <?php if (isset($_SESSION['flag'])): ?>
-          <div class="alert alert-<?php echo $_SESSION['flag']; ?>"><?php echo $_SESSION['msg']; ?></div>
         <?php endif; ?>
     <div style="padding: 20px 10px;">
 <div style="border:1px solid gold;font-size: 12px; padding: 20px; text-align: center;">

@@ -1,14 +1,15 @@
 <?php
   include 'header.php';
   include 'nav.php';
+  include 'login.php';
 ?>
   <section class="site-section bg-light mt-4 mb-4">
-    <div class="container">
+   <!--  <div class="container">
       <br><br>
       <div style="border: 2px #9999ff solid; background-color: #9999ff; border-top-right-radius: 90px;border-top-left-radius: 90px;">
           <h3 align="center" style="color: #fff;">Donate</h3>
         </div>
-      </div>
+      </div> -->
 
        <div class="container">
           <div class="row">
@@ -29,7 +30,7 @@
             </div>
           </div>
         </div>
-        <h2 style="text-align: center;">Kindly click the donate button below to donate to MEDAF</h2> 
+        <h2 style="text-align: center; font-size: 12px;">Kindly click the donate button below to donate to MEDAF</h2> 
   <script src="https://js.paystack.co/v1/inline.js"></script>
   
    <p style="text-align: center;"><a href="https://paystack.com/pay/medaf" class="btn btn-primary px-2 py-1">Donate</a></p><br>

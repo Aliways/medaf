@@ -5,6 +5,14 @@ include 'nav.php';
 ?>
 <body>
 
+   <div class="container">
+        <?php if (isset($_SESSION['flag'])): ?>
+          <div class="col-md-2 justify-content-md-center alert alert-<?php echo $_SESSION['flag']; ?>" id="msf"><?php echo $_SESSION['msg']; ?></div>
+        <?php endif; ?>
+  </div>
+
+  
+
   <ul class="breadcrumb">
     <li><a href="#"><img src="images/phone-book.png"></a></li>
     <li><a href="#">Development Camp</a></li>
@@ -24,16 +32,16 @@ include 'nav.php';
               <form id="development_camp" method='POST' action="db/development_camp.php">
                     <div class="form-group ">
                       <label for="name">Name</label>
-                      <input type="text" name="name" id="name" class="form-control" style="height: 35px !important;">
+                      <input type="text" name="name" id="name" class="form-control" style="height: 35px !important" required>
                     </div>
                     
                     <div class="form-group">
                       <label for="phone">Course of Study</label>
-                      <input type="text" name="course_of_study"id="phone" class="form-control" style="height: 35px !important;">
+                      <input type="text" name="course_of_study"id="phone" class="form-control" style="height: 35px !important" required>
                     </div>
                     <div class=" form-group">
                       <label for="academic_level">Academic Level</label>
-                      <input type="text" name="academic_level"id="email" class="form-control" style="height: 35px !important;">
+                      <input type="text" name="academic_level"id="email" class="form-control" style="height: 35px !important" required>
                       E.g, 200 Level, Masters, Bsc etc
                     </div>
 
@@ -92,6 +100,8 @@ include 'nav.php';
 
 
 </body>
+
+
 <?php
 include 'footer.php';
 

@@ -15,9 +15,9 @@
                   <a class="dropdown-item" href="objectives.php">Objectives</a>
                   <a class="dropdown-item" href="achievement.php">Achievements</a>
                   <a class="dropdown-item" href="board.php">Board of Directors</a>
-                  <a class="dropdown-item" href="advisory.php">Advisory Board</a>
+                 <!--  <a class="dropdown-item" href="advisory.php">Advisory Board</a>
                   <a class="dropdown-item" href="executive.php">Executive Management</a>
-                  <a class="dropdown-item" href="winners.php">Read 2Lead Challenge Winners</a>
+                  <a class="dropdown-item" href="winners.php">Read 2Lead Challenge Winners</a> -->
                 </div>
             </li>
           <li class="nav-item dropdown">
@@ -44,8 +44,8 @@
                 <a class="dropdown-item" href="2lead_challenge.php">Read 2Lead Challenge</a>
               </div>
             </li>
+          <li class="nav-item mt-2"><a href="login.php" class="btn btn-primary px-2 py-1" data-toggle="modal" data-target="#exampleModal">Login</a></li>
           
-          <li class="nav-item mt-2"><a href="#" class="btn btn-primary px-2 py-1" data-toggle="modal" data-target="#exampleModal">Login</a></li>
         </ul>
       </div>
     </div>

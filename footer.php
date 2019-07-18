@@ -1,4 +1,4 @@
-<footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(images/exe.png); background-attachment:fixed;">
+<footer class="ftco-footer ftco-bg-dark ftco-section img mb-2" style="background-image: url(images/exe.png); background-attachment:fixed;">
       <div class="overlay"></div>
       <div class="container">
         <div class="row mb-5">
@@ -21,7 +21,7 @@
               <div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
                 <div class="text">
-                  <h3 class="heading"><a href="#">The Global Village</a></h3>
+                  <h3 class="heading"><a href="blog.php">The Global Village</a></h3>
                   <div class="meta">
                     <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
                     <div><a href="#"><span class="icon-person"></span> Admin</a></div>
@@ -32,7 +32,7 @@
               <div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(images/unilag.png);"></a>
                 <div class="text">
-                  <h3 class="heading"><a href="#">The Importance of Education</a></h3>
+                  <h3 class="heading"><a href="blog.php">The Importance of Education</a></h3>
                   <div class="meta">
                     <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
                     <div><a href="#"><span class="icon-person"></span> Admin</a></div>
@@ -40,6 +40,7 @@
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
           <div class="col-md-2">
@@ -108,6 +109,18 @@
   <script>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+
+  
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      window.setTimeout(function() {
+    $("#msf").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove(); 
+    });
+}, 4000);
+    });
   </script>
  </body>
 </html>
