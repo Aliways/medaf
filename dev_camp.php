@@ -1,11 +1,11 @@
 <?php
-include 'header.php';
-include 'nav.php';
-
+  include 'header.php';
+  include 'nav.php';
+  include 'login.php';
 ?>
 <body>
 
-   <div class="container">
+  <div class="container">
         <?php if (isset($_SESSION['flag'])): ?>
           <div class="col-md-2 justify-content-md-center alert alert-<?php echo $_SESSION['flag']; ?>" id="msf"><?php echo $_SESSION['msg']; ?></div>
         <?php endif; ?>

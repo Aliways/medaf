@@ -7,11 +7,25 @@
 
 // require 'config.php';
 // var_dump($_POST);
+// exit();
 
 $db = mysqli_connect("localhost","root","","medaf");
 if(!$db){
 	die('Database not Found!!!').mysqli_error();
 }
+
+// foreach ($_POST as $key => $value) {
+// 	# code...
+// 	if($_POST["$key"] == ''){
+// 		$_SESSION['flag'] = 'danger';
+// 		$_SESSION['msg'] = ucfirst(str_replace(['-','_'], [' ', ' '], $key))." field is required!!!";
+// 		// header('location: ../index.php');
+// 		break;
+// 	}
+// }
+
+// echo $_SESSION['msg'];
+// exit();
 
 if(isset($_POST['submit'])){
 	$sql = "INSERT INTO scholarship (`id`, `scholarship_type`, `full_name`, `gender`, `religion`, `marital_status`, `email`, `password`, `date_of_birth`, `state_of_origin`, `phone_number`, `islamic_organisation`, `local_government_area_of_origin`, `home_address`, `contact_address_of_islamic_organisation`, `postal_address`, `name_of_institution`, `course_of_study`, `official_website_of_institute`, `certificate_obtained`, `expected_year_of_program_completion`, `contact_address_of_the_institution`, `personal_statement`) VALUES (NULL,'".$_POST['scholarship_type']."','".$_POST['full_name']."','".$_POST['gender']."','".$_POST['religion']."','".$_POST['marital_status']."','".$_POST['email']."','".$_POST['password']."','".$_POST['date_of_birth']."','".$_POST['state_of_origin']."','".$_POST['phone_number']."','".$_POST['islamic_organisation']."','".$_POST['local_government_area_of_origin']."','".$_POST['home_address']."','".$_POST['name_of_institution']."','".$_POST['course_of_study']."','".$_POST['official_website_of_the_institution']."','".$_POST['certificate_obtained']."','".$_POST['expected_year_of_program_completion']."','".$_POST['contact_address_of_islamic_organisation']."','".$_POST['personal_statement']."','".$_POST['postal_address']."','".$_POST['contact_address_of_the_institution']."')";

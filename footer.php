@@ -73,7 +73,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed & Developed with <i class="icon-heart" aria-hidden="true"></i> by <a href="http://techend.com.ng" target="_blank">TECHEND</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed & Developed with <i class="icon-heart" aria-hidden="true"></i> by <a href="http://techend.com.ng" target="_blank" style="text-decoration: none;">TECHEND</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>

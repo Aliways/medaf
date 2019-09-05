@@ -1,6 +1,8 @@
-<?php include "header.php" ?>
-<?php include "nav.php" ?>
-<?php //include "login.php"?>
+<?php
+include 'header.php';
+include 'nav.php';
+include 'login.php';
+?>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <style>
@@ -85,6 +87,9 @@ button:hover {
 
 
 </style>
+<?php
+  include 'login.php';
+?>
 <body>
 
   <div class="container">

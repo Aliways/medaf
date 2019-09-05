@@ -114,7 +114,8 @@ body {
     background-color: #167ce9;
 }
 
-.my-small-btn, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+/*.my-small-btn, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{*/
+.my-small-btn{
     width:100px;
     padding:1px;
     color: #fff;

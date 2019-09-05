@@ -1,16 +1,11 @@
 
+
   <div class="container">
         <?php if (isset($_SESSION['flag'])): ?>
           <div class="col-md-2 justify-content-md-center alert alert-<?php echo $_SESSION['flag']; ?>" id="msf"><?php echo $_SESSION['msg']; ?></div>
         <?php endif; ?>
   </div>
-
-
-
-  
-
-
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -35,14 +30,14 @@
           <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
         </div>
 
-        <div class="tab">Scholarship Type:
+        <!-- <div class="tab">Scholarship Type:
             <select id="form_need" name="scholarship_type" class="form-control" required  data-error="Please specify your need.">
               <option selected style="font-size: 10px;">- Select -</option>
               <option value="school_fees_reimbursement" style="font-size: 10px;">School Fees Reimbursement</option>
               <option value="career_advancement_professional_certification" style="font-size: 10px;">Career Advancement/Professional Certification</option>
                <option value="orphanage_assistanship" style="font-size: 10px;">Orphanage Assistanship</option>
             </select>
-          </div><br>
+          </div><br> -->
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
       </div>

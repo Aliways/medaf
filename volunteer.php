@@ -1,8 +1,7 @@
 <?php
-include 'header.php';
-include 'nav.php';
-
-
+  include 'header.php';
+  include 'nav.php';
+  include 'login.php';
 ?>
 <body>
   <div class="container">

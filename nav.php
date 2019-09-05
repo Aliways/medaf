@@ -30,7 +30,7 @@
                   <a class="dropdown-item" href="mydc.php">Muslim Youth Development Camp</a>
                 </div>
             </li>
-            <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="http://localhost/medaf/blog" target="__blank" rel="follow" class="nav-link">Blog</a></li>
 
           <li class="nav-item"><a href="donate.php" class="nav-link">Donate</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>

@@ -95,45 +95,45 @@ button:hover {
 <form id="regForm" method="POST" action="db/upload.php" enctype="multipart/form-data">
   <h1><strong>Upload your credentials</strong></h1>
     <div class="form-item webform-component webform-component-file webform-component--documents--invoice">
-      <label for="edit-submitted-documents-invoice-upload">Invoice <span class="form-required" title="This field is required.">*</span></label>
-      <div class="form-managed-file"><input type="file" id="edit-submitted-documents-invoice-upload" name="files_submitted_documents_invoice" size="22" class="form-file"  required/>
+      <label for="edit-submitted-documents-invoice-upload">Invoice <span class="form-required" title="This field is.">*</span></label>
+      <div class="form-managed-file"><input type="file" id="edit-submitted-documents-invoice-upload" name="files_submitted_documents_invoice" size="22" class="form-file" />
       </div>
     </div><br>
 
     <div class="form-item webform-component webform-component-file webform-component--documents--invoice">
-      <label for="edit-submitted-documents-invoice-upload">School ID Card<span class="form-required" title="This field is required.">*</span></label>
-      <div class="form-managed-file"><input type="file" id="edit-submitted-documents-invoice-upload" name="files_submitted_documents_school_id_card" size="22" class="form-file" required/>
+      <label for="edit-submitted-documents-invoice-upload">School ID Card<span class="form-required" title="This field is.">*</span></label>
+      <div class="form-managed-file"><input type="file" id="edit-submitted-documents-invoice-upload" name="files_submitted_documents_school_id_card" size="22" class="form-file"/>
       </div>
     </div><br>
 
     <div class="form-item webform-component webform-component-file webform-component--documents--invoice">
-      <label for="edit-submitted-documents-invoice-upload">Last Exam Result<span class="form-required" title="This field is required.">*</span></label>
-      <div class="form-managed-file"><input type="file" id="edit-submitted-documents-invoice-upload" name="files_submitted_documents_last_exam_result" size="22" class="form-file" required/>
+      <label for="edit-submitted-documents-invoice-upload">Last Exam Result<span class="form-required" title="This field is.">*</span></label>
+      <div class="form-managed-file"><input type="file" id="edit-submitted-documents-invoice-upload" name="files_submitted_documents_last_exam_result" size="22" class="form-file"/>
       </div>
     </div><br>
 
     <div class="form-item webform-component webform-component-file webform-component--documents--invoice">
-      <label for="edit-submitted-documents-invoice-upload">Passport<span class="form-required" title="This field is required.">*</span></label>
-      <div class="form-managed-file"><input type="file" id="edit-submitted-documents-invoice-upload" name="files_submitted_passport" size="22" class="form-file" required/>
+      <label for="edit-submitted-documents-invoice-upload">Passport<span class="form-required" title="This field is.">*</span></label>
+      <div class="form-managed-file"><input type="file" id="edit-submitted-documents-invoice-upload" name="files_submitted_passport" size="22" class="form-file"/>
       </div>
     </div><br>
     <!-- <input type="submit" id="edit-submitted-documents-invoice-upload-button" name="submitted_documents_invoice_upload_button" value="Upload" class="form-submit" /><input type="hidden" name="submitted[documents][invoice][fid]" value="0" /> -->
         
         <!--  <div class="description">A scanned copy of the invoice to be paid<br />Files must be less than <strong>2 MB</strong>.<br />Allowed file types: <strong>gif jpg jpeg png pdf</strong>.</div><br>
 
-          <label for="edit-submitted-documents-school-id-card-upload">School ID Card <span class="form-required" title="This field is required.">*</span></label>
+          <label for="edit-submitted-documents-school-id-card-upload">School ID Card <span class="form-required" title="This field is.">*</span></label>
          <div class="form-managed-file"><input type="file" id="edit-submitted-documents-school-id-card-upload" name="files_submitted_documents_school_id_card" size="22" class="form-file" /><input type="submit" id="edit-submitted-documents-school-id-card-upload-button" name="submitted_documents_school_id_card_upload_button" value="Upload" class="form-submit" /><input type="hidden" name="submitted[documents][school_id_card][fid]" value="0" />
         </div>
          <div class="description">Files must be less than <strong>2 MB</strong>.<br />Allowed file types: <strong>gif jpg jpeg png pdf</strong>.</div><br>
 
-         <label for="edit-submitted-documents-last-exam-result-upload">Last Exam Result <span class="form-required" title="This field is required.">*</span></label>
+         <label for="edit-submitted-documents-last-exam-result-upload">Last Exam Result <span class="form-required" title="This field is.">*</span></label>
          <div class="form-managed-file"><input type="file" id="edit-submitted-documents-last-exam-result-upload" name="files_submitted_documents_last_exam_result" size="22" class="form-file" /><input type="submit" id="edit-submitted-documents-last-exam-result-upload-button" name="submitted_documents_last_exam_result_upload_button" value="Upload" class="form-submit" /><input type="hidden" name="submitted[documents][last_exam_result][fid]" value="0" />
         </div>
          <div class="description">Files must be less than <strong>2 MB</strong>.<br />Allowed file types: <strong>gif jpg jpeg png pdf</strong>.</div> -->
        
 
         <!-- <div id="edit-submitted-passport-ajax-wrapper"><div  class="form-item webform-component webform-component-file webform-component--passport">
-          <label for="edit-submitted-passport-upload">Passport <span class="form-required" title="This field is required.">*</span></label>
+          <label for="edit-submitted-passport-upload">Passport <span class="form-required" title="This field is.">*</span></label>
          <div class="form-managed-file"><input type="file" id="edit-submitted-passport-upload" name="files_submitted_passport" size="22" class="form-file" /><input type="submit" id="edit-submitted-passport-upload-button" name="submitted_passport_upload_button" value="Upload" class="form-submit" /><input type="hidden" name="submitted[passport][fid]" value="0" />
         </div>
          <div class="description">Files must be less than <strong>2 MB</strong>.<br />Allowed file types: <strong>gif jpg jpeg png</strong>.</div>
